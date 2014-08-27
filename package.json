@@ -1,0 +1,49 @@
+{
+  "name": "sailor-twitter",
+  "description": "A new sailor Proyect",
+  "version": "1.0.5",
+  "author": {
+    "name": "Kiko Beats",
+    "email": "josefrancisco.verdu@gmail.com",
+    "url": "https://github.com/Kikobeats"
+  },
+  "dependencies": {
+    "connect-redis": "1.4.7",
+    "express-validator": "*",
+    "grunt": "*",
+    "grunt-contrib-clean": "*",
+    "grunt-contrib-coffee": "~*",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-copy": "*",
+    "grunt-contrib-cssmin": "*",
+    "grunt-contrib-less": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-sync": "*",
+    "grunt-translate-compile": "git://github.com/Kikobeats/translate-compile",
+    "include-all": "*",
+    "rc": "*",
+    "sailor-module-user": "git://github.com/sailorjs/sailor-module-user",
+    "sailorjs": "git://github.com/sailorjs/sailorjs",
+    "sails-disk": "*",
+    "sails-mongo": "*",
+    "sort-keys": "*"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*"
+  },
+  "engines": {},
+  "homepage": "",
+  "keywords": [
+    "sailor"
+  ],
+  "license": "MIT",
+  "main": "",
+  "repository": "",
+  "scripts": {
+    "start": "node_modules/.bin/sailor lift --production",
+    "test": "sh test/test.sh",
+    "prepublish": "npm prune && cd node_modules/"
+  }
+}
