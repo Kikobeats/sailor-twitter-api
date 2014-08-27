@@ -19,6 +19,7 @@ module.exports.sockets =
   automatically.                                                           *
   ###
   onConnect: (session, socket) ->
+    sails.log.debug 'new socket incoming ::'
 
 
   # By default, do nothing.
@@ -28,6 +29,7 @@ module.exports.sockets =
   disconnects                                                              *
   ###
   onDisconnect: (session, socket) ->
+    sails.log.debug 'disconnect socekt ::'
 
 # By default: do nothing.
 
