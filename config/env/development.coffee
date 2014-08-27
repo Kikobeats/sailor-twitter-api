@@ -33,14 +33,14 @@ sockets:
   db: 'redis-sailor-twitter-backend',
   host: 'pub-redis-16675.eu-west-1-1.1.ec2.garantiadata.com',
   port: 16675,
-  pass: SAILS_SOCKET_PASSWORD
+  pass: process.env.SAILS_SOCKET_PASSWORD
 
 session:
   adapter: 'redis'
   db: 'redistogo'
   host: 'jack.redistogo.com'
   port: 10816
-  pass: SAILS_SESSION_PASSWORD
+  pass: process.env.SAILS_SESSION_PASSWORD
   ttl: 150
   prefix: 'sess:'
 
