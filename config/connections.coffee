@@ -41,7 +41,7 @@ module.exports.connections =
     host: 'lennon.mongohq.com'
     port: 10024
     user: 'kikobeats'
-    password: SAILS_MONGO_PASSWORD
+    password: process.env.SAILS_MONGO_PASSWORD
 
   # MongoLocal:
   #   adapter: "sails-mongo"
