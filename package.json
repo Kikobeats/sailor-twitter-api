@@ -9,7 +9,6 @@
   },
   "dependencies": {
     "connect-redis": "1.4.7",
-    "express-validator": "*",
     "grunt": "*",
     "grunt-contrib-clean": "*",
     "grunt-contrib-coffee": "~*",
