@@ -16,16 +16,33 @@ environment (see config/connections.js and config/models.js )           *
 ###
 
 policies: "*": ['i18n']
-cors: allRoutes: true
+cors:
+  allRoutes: true
+  headers: 'Authorization, content-type'
 
 csrf: false
   # grantTokenViaAjax: true
   # origin: 'http://localhost:8000'
 
-# csrf: false
-# cors: headers: 'Authorization'
+models:
+  connection: 'MongoHeroku'
+  migrate: 'drop'
 
-sockets: adapter: 'memory'
-models: connection: 'localDiskDb'
-session: adapter: 'memory'
-log: level: 'silly'
+sockets:
+  adapter: 'redis'
+  db: 'redis-sailor-twitter-backend',
+  host: 'pub-redis-16675.eu-west-1-1.1.ec2.garantiadata.com',
+  port: 16675,
+  pass: SAILS_SOCKET_PASSWORD
+
+session:
+  adapter: 'redis'
+  db: 'redistogo'
+  host: 'jack.redistogo.com'
+  port: 10816
+  pass: SAILS_SESSION_PASSWORD
+  ttl: 150
+  prefix: 'sess:'
+
+log:
+  level: 'silly'
