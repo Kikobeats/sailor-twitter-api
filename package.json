@@ -42,7 +42,7 @@
   "main": "",
   "repository": "",
   "scripts": {
-    "start": "node_modules/.bin/sailor lift",
+    "start": "node_modules/.bin/sailor lift --production",
     "test": "sh test/test.sh",
     "prepublish": "npm prune && cd node_modules/"
   }
