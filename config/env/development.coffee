@@ -25,27 +25,27 @@ csrf: false
   # origin: 'http://localhost:8000'
 
 models:
-  # connection: 'localDiskDb'
-  connection: 'MongoHeroku'
+  connection: 'localDiskDb'
+  # connection: 'MongoHeroku'
   migrate: 'alter'
 
 sockets:
-  # adapter: 'memory'
-  adapter: 'redis'
-  db: 'redis-sailor-twitter-backend',
-  host: 'pub-redis-16675.eu-west-1-1.1.ec2.garantiadata.com',
-  port: 16675,
-  pass: process.env.SAILS_SOCKET_PASSWORD
+  adapter: 'memory'
+  # adapter: 'redis'
+  # db: 'redis-sailor-twitter-backend',
+  # host: 'pub-redis-16675.eu-west-1-1.1.ec2.garantiadata.com',
+  # port: 16675,
+  # pass: process.env.SAILS_SOCKET_PASSWORD
 
 session:
-  # adapter: 'memory'
-  adapter: 'redis'
-  db: 'redistogo'
-  host: 'jack.redistogo.com'
-  port: 10816
-  pass: process.env.SAILS_SESSION_PASSWORD
-  ttl: 150
-  prefix: 'sess:'
+  adapter: 'memory'
+  # adapter: 'redis'
+  # db: 'redistogo'
+  # host: 'jack.redistogo.com'
+  # port: 10816
+  # pass: process.env.SAILS_SESSION_PASSWORD
+  # ttl: 150
+  # prefix: 'sess:'
 
 log:
   level: 'info'
