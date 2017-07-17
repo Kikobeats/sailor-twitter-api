@@ -8,7 +8,7 @@
     "url": "https://github.com/Kikobeats"
   },
   "dependencies": {
-    "connect-redis": "1.4.7",
+    "connect-redis": "3.3.0",
     "grunt": "*",
     "grunt-contrib-clean": "*",
     "grunt-contrib-coffee": "~*",
